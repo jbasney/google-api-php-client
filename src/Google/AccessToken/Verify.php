@@ -31,9 +31,9 @@ use Stash\Pool;
  */
 class Google_AccessToken_Verify
 {
-  const FEDERATED_SIGNON_CERT_URL = 'https://www.googleapis.com/oauth2/v3/certs';
-  const OAUTH2_ISSUER = 'accounts.google.com';
-  const OAUTH2_ISSUER_HTTPS = 'https://accounts.google.com';
+  const FEDERATED_SIGNON_CERT_URL = 'https://cilogon.org/oauth2/certs';
+  const OAUTH2_ISSUER = 'cilogon.org';
+  const OAUTH2_ISSUER_HTTPS = 'https://cilogon.org';
 
   /**
    * @var GuzzleHttp\ClientInterface The http client

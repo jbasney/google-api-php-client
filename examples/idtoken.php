@@ -33,12 +33,12 @@ if (!$oauth_credentials = getOAuthCredentialsFile()) {
  * The redirect URI is to the current page, e.g:
  * http://localhost:8080/idtoken.php
  ************************************************/
-$redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$redirect_uri = 'https://localhost/idtoken.php';
 
 $client = new Google_Client();
 $client->setAuthConfig($oauth_credentials);
 $client->setRedirectUri($redirect_uri);
-$client->setScopes('email');
+$client->setScopes('openid email');
 
 /************************************************
  * If we're logging out we just need to clear our
